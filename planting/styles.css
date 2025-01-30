@@ -1,0 +1,372 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Lato', sans-serif;
+}
+
+/* <!navbar> */
+#navbar{
+    background: #2fbc47;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.navbar-nav{
+    margin-left: 20px;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 550;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: 0.5ms ease;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: orange;
+    color: white;
+    border: none;
+}
+/* <!--end of navbar> */
+
+
+/* <!---home page---> */
+.home {
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(rgba(218, 228, 219, 0.3), rgba(120, 229, 108, 0.2)), url('./images/backgroundimage.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.home .content
+{
+      text-align:center;
+      padding-top: 200px;
+}
+.home .content h5
+{
+    color:black;
+    font-size:50px;
+    font-weight: 550;
+    padding-bottom: 40px;
+}
+#explore-btn
+{
+    background: green;
+    color:white;
+    border-style: none;
+    padding: 15px;
+    font-weight: 550;
+    transition: 0.5s ease;
+}
+#explore-btn:hover
+{
+    width: 180px;
+    opacity: 0.7;
+}
+@media (max-width:850px){
+    .home{
+        background-position: 50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+        font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 38px;
+    }
+    .home .content p{
+        font-size: 13px;
+    }
+}
+/* <!--end of home page---> */
+
+
+/* <!--about page---> */
+.about
+{
+    padding:30px;
+    margin-top:30px;
+    background-color: rgb(206, 201, 201);
+}
+.about span
+{
+    color: #ffa500;
+    font-weight: bold;
+}
+.about .card
+{
+    height:80%;
+    border-radius:10px;
+}
+.about .card img
+{
+    height: 100%;
+    width: 100%;
+    border-radius:10px;
+}
+.about .main-txt
+{
+    margin-top: 20px;
+}
+.about h2
+{
+    font-weight:600;
+    letter-spacing: 1px;
+}
+.about p
+{
+    font-weight:500;
+}
+#about-btn
+{
+    width: 150px;
+    height:38px;
+    border:none;
+    border-radius: 5px;
+    background: orange;
+    color:white;
+    letter-spacing: 2px;
+    font-weight: 550;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+#about-btn:hover
+{
+    width:170px;
+}
+@media (max-width:765)
+{
+    .about
+    {
+        padding:0;
+    }
+}
+/* <!end of about page--> */
+
+
+/* <!--services page> */
+ .services
+{
+    background:white;
+    margin-top: 35px;
+}
+.services .container
+{
+    height: 1000px;
+}
+.services .main-txt h1
+{
+    font-weight:bolder;
+}
+.services
+{
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(241, 246, 240, 0.2)), url('./images/service\ background.jpg');
+    
+}
+.services span
+{
+    color: #ffa500;
+    font-weight: bold;
+}
+.services .main-txt
+{
+    padding-top: 70px;
+}
+.services-content
+{
+    padding-top: 50px;
+    font-weight: 50;
+    font-size: 30px;
+    font-style: italic;
+    color:white;
+    border-style: solid;
+    background-color: rgb(134, 130, 130);
+    padding: 20px;
+    margin-top: 30px;
+}
+.flip-card {
+    width: 300px;
+    height: 300px;
+  }
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    font-weight: bold;
+  }
+  
+  .flip-card-front img {
+    width: 100%;
+    max-height: 150px; 
+    object-fit: cover;
+  }
+  
+  .flip-card-front h3 {
+    background: #ffa500;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #ffa500;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px; 
+    border-radius: 10px;
+  }
+  @media (max-width:765)
+{
+    .flip-card {
+        width: 150px;
+        height: 200px;
+      }
+}
+/* <!end of service page>   */
+
+/* <!gallery> */
+.gallary
+{
+    margin-top: 20px;
+    padding: 40px;
+    background-color: rgb(206, 201, 201);
+}
+.gallary .row {
+    row-gap: 50px; }
+.gallary .main-txt
+{
+    padding-top: 30px;
+}
+.gallary .container
+{
+    height: 780px;
+}
+.gallary span
+{
+    color: #ffa500;
+    font-weight: bold;
+}
+.gallary .card
+{
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,0.7) 10px 10px 12px; ;
+    width: 260px;
+    height: 200px;
+    cursor: pointer;
+}
+.gallary .card img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+.main-txt h1
+{
+   
+    text-align: center;
+    padding-bottom: 40px;
+}
+/* <!end of gallary> */
+
+/* <!contact> */
+.contact
+{
+    margin-top: 80px;
+    padding: 40px;
+    font-size: 20px;
+    background-color:rgb(206, 201, 201);
+}
+.contact span
+{
+    color:#ffa500;
+    font-weight:bold;
+}
+.contact .container
+{
+    padding-left: 200px;
+}
+.contact form
+{
+    padding-left: 500px;
+    background: #ffa500;
+    /* padding-bottom: 30px; */
+}
+.contact button
+{
+    margin-top: 12px;
+    padding-top: 10px;
+    margin-left: 250px;
+}
+.contact .address-info
+{
+    padding-left: 100px;
+    background: orange;
+}
+/* Footer Start */
+#footer{
+    /* width: 100%; */
+    margin-top: 150px;
+    text-align: center;
+    background: #b8d493aa;
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: 0px 0px 1px black;
+}
+#footer h1 span{
+    color: #ffa500;
+}
+.social-links i{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    background: black;
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.social-links i:hover{
+    background: #ffa500;
+}
+/* Footer End */
